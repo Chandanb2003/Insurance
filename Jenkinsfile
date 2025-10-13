@@ -47,7 +47,7 @@ pipeline {
                             terraform init -input=false
                             terraform apply -auto-approve -input=false
                         else
-                            echo "✅ Cluster '${CLUSTER_NAME}' already exists. Skipping Terraform apply."
+                            echo "✅ Cluster '${CLUSTER_NAME}' already exist. Skipping Terraform apply."
                         fi
                         '''
                     }
