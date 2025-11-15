@@ -35,6 +35,16 @@ Insurance/
 │── src/
 │── README.md
 
+🔐 GCP Service Account Permissions
+
+The Jenkins pipeline uses Terraform, GKE, Docker, and kubectl.
+Assign the following IAM roles to the service account used in the pipeline:
+roles/container.admin
+roles/compute.admin
+roles/iam.serviceAccountUser
+roles/storage.admin  
+
+
 🚀 Run Locally (Quickstart)
 1️⃣ Build Docker Image
 docker build -t insurance-app .
